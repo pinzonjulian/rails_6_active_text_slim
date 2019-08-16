@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+p#notice = notice
+p
+  strong Title: #{@post.title}
+
+div = @post.body
+div
+  = link_to 'Edit', edit_post_path(@post)
+  br
+  = link_to 'Back', posts_path
